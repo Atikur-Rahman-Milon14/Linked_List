@@ -15,11 +15,11 @@ void insert_on_tail(Node* &head, Node* &Tail, int val){
     Node* newNode = new Node(val);
     if(head == NULL){
         head = newNode;
-        // Tail = newNode;
+        Tail = newNode;
         return;
     }
     Tail->next = newNode;
-    // Tail = newNode;
+    Tail = newNode;
 };
 void print_tail(Node* head){
     Node* tmp = head;
